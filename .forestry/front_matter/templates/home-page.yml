@@ -36,15 +36,6 @@ fields:
   label: Přesměrováno z (redirect_from)
   default: ''
   hidden: true
-- name: tags
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-    source:
-      type: simple
-  label: Štítky (tags)
 - name: logotype
   type: file
   config:

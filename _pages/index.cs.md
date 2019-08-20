@@ -32,13 +32,4 @@ hero_image:
 - "/uploads/2019/08/20/pradlenka-garden.jpg"
 - "/uploads/2019/08/20/pradlenka-restaurant.jpg"
 daily_menu_toggle: true
-tags:
-- bar
-- prádelna
-- pradlenka
-- praní
-- restaurace
-- smíchov
-- sušení
-
 ---
