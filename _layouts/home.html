@@ -3,6 +3,9 @@
 <html {{ lang }}>
 <head>
 {% include head.html %}
+<script>
+hero_image = {{ page.hero_image | jsonify }};
+</script>
 <style>
 :root {
 	--hero-image: url({{ page.hero_image | sample | relative_url }});
