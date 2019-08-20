@@ -1,23 +1,10 @@
-{% if page.lang %}
-	{% capture lang %}lang="{{ page.lang }}"{% endcapture %}
-{% else %}
-  {% assign lang = "" %}
-{% endif %}
-{% capture hero_images %}[{% for url in page.hero_image %}"{{ url | relative_url }}",{% endfor %}]{% endcapture %}
 <!doctype html>
-<html {{ lang }}>
+<html>
 <head>
 {% include head.html %}
 <style>
 :root {
 	--hero-image: url({{ page.hero_image | sample | relative_url }});
-}
-.hero {
-	background-image: var(--hero-image);
-	background-size: cover;
-	background-position: center 0;
-	background-attachment: fixed;
-	transition: background-image 2s ease-in-out;
 }
 </style>
 </head>
