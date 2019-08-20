@@ -3,17 +3,38 @@
 {% else %}
   {% assign lang = "" %}
 {% endif %}
-{% capture hero_images %}[{% for url in page.hero_image %}"{{ url | relative_url }}",{% endfor %}]{% endcapture%}
+{% capture hero_images %}[{% for url in page.hero_image %}"{{ url | relative_url }}",{% endfor %}]{% endcapture %}
 <!doctype html>
 <html {{ lang }}>
 <head>
 {% include head.html %}
 <script>
-hero_image = {{ hero_images }};
+function ready(fn) {
+  (document.readyState != 'loading') ? fn() : document.addEventListener('DOMContentLoaded', fn);
+}
+function onReady() {
+	const hero_images = {{ hero_images }};
+	const hero_length = hero_images.length
+	let current_image = 0;
+  const hero = document.querySelector(".hero");
+  setTimeout(next, 10000);
+	function next() {
+	  current_image = (current_image + 1) % hero_length;
+	  hero.style.backgroundImage = `url(${hero_images[current_image]})`;
+	  setTimeout(next, 10000);
+	}
+}
 </script>
 <style>
 :root {
 	--hero-image: url({{ page.hero_image | sample | relative_url }});
+}
+.hero {
+	background-image: var(--hero-image);
+	background-size: cover;
+	background-position: center 0;
+	background-attachment: fixed;
+	transition: background-image 2s ease-in-out;
 }
 </style>
 </head>
@@ -21,7 +42,7 @@ hero_image = {{ hero_images }};
 	<header>
 		<a href="{{ site.baseurl | relative_url }}"><img src="{{ page.logotype | relative_url }}" alt="logo"></a>
 	</header>
-	<section>
+	<section class="hero">
 	</section>
 	<footer></footer>
 </body>
