@@ -9,7 +9,7 @@
 <head>
 {% include head.html %}
 <script>
-(function ready(fn) { (document.readyState != 'loading') ? fn() : document.addEventListener('DOMContentLoaded', fn); })()
+(function ready(fn) { (document.readyState != 'loading') ? fn() : document.addEventListener('DOMContentLoaded', fn); console.log(111); })()
 function onReady() {
 	var hero_images = {{ hero_images }};
 	var hero_length = hero_images.length;
