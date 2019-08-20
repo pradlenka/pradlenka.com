@@ -7,8 +7,7 @@ sections:
 - type: jekyll-pages
   label: Stránky
   create: documents
-  match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - home-page
 - type: heading
