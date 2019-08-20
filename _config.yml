@@ -54,7 +54,6 @@ social:
 logo: "/assets/meta/apple-touch-icon.png"
 exclude:
   - .*/
-  - _*/
   - CNAME
   - Gemfile*
 gems:
