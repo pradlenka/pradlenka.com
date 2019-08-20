@@ -12,6 +12,14 @@ sections:
   new_doc_ext: yml
   templates:
   - daily-menu
+- type: document
+  path: _data/opening-hours.yml
+  label: Otvírací doba
+  match: "**/*"
+- type: document
+  path: _data/contacts.yml
+  label: Kontakty
+  match: "**/*"
 - type: directory
   path: ''
   label: Všechno
