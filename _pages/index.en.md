@@ -1,6 +1,6 @@
 ---
 title: Pradlenka – Restaurant & Bar
-permalink: "/"
+permalink: "/en/"
 layout: home
 lang: en
 logotype: "/uploads/2019/08/20/Pradlenka-logo.png"
