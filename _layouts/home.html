@@ -13,6 +13,7 @@ var hero_images = {{ hero_images }};
 var hero_length = hero_images.length;
 var current_image = 0;
 var hero = document.querySelector(".hero");
+console.log(hero);
 function next() {
 	current_image = (current_image + 1) % hero_length;
 	hero.style.backgroundImage = "url(" + hero_images[current_image] + ")";
