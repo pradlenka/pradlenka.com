@@ -32,5 +32,3 @@ fields:
     max: 
     labelField: 
   label: Otevírací doba
-pages:
-- _data/opening-hours.yml

@@ -5,6 +5,14 @@ admin_path: admin
 webhook_url: 
 sections:
 - type: directory
+  path: _daily_menu
+  label: Denní nabidky
+  create: documents
+  match: "**/*.yml"
+  new_doc_ext: ".yml"
+  templates:
+  - daily-menu
+- type: directory
   path: ''
   label: Všechno
   create: all
