@@ -4,14 +4,16 @@ auto_deploy: false
 admin_path: admin
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Stránky
-  create: documents
-  new_doc_ext: md
-  templates:
-  - home-page
 - type: heading
   label: Stránky
+- type: document
+  path: _pages/index.cs.md
+  label: Česky
+  match: "**/*"
+- type: document
+  path: _pages/index.en.md
+  label: English
+  match: "**/*"
 - type: heading
   label: Nastavení
 - type: directory
