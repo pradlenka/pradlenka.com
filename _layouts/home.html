@@ -16,8 +16,8 @@ var hero = document.querySelector(".hero");
 
 function next() {
 	current_image = (current_image + 1) % hero_length;
-	hero.style.backgroundImage = `url(${hero_images[current_image]})`;
-	console.log(current_image)
+	hero.style.backgroundImage = "url(" + hero_images[current_image] + ")";
+	console.log(current_image);
 	setTimeout(next, 10000);
 }
 
