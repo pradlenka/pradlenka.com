@@ -3,7 +3,7 @@ label: Home Page
 hide_body: true
 fields:
 - name: layout
-  label: Vzhled
+  label: Vzhled (layout)
   type: text
   hidden: true
   default: home
@@ -20,12 +20,12 @@ fields:
       section: 
       file: 
       path: 
-  label: Jazyk
+  label: Jazyk (lang)
 - name: permalink
   type: text
   config:
     required: false
-  label: Odkaz
+  label: Odkaz (permalink)
   default: ''
 - name: logotype
   type: file
@@ -37,7 +37,7 @@ fields:
   type: text
   config:
     required: false
-  label: Název
+  label: Název (title)
   default: Pradlenka – restaurant & bar
 - name: hero_image
   type: image_gallery
@@ -116,7 +116,4 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: O nás
-pages:
-- _pages/en/index.md
-- _pages/cs/index.md
+  label: O nás (description)
