@@ -2,7 +2,6 @@
 title: Pradlenka – Restaurant & Bar
 permalink: "/"
 layout: home
-publish_date: 2019-08-20 16:08:80 +/-TTTT
 lang: en
 logotype: "/uploads/2019/08/20/Pradlenka-logo.png"
 daily_menu_select: _daily_menu/2019-08-20.yml
