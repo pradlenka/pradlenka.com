@@ -5,7 +5,7 @@
 {% endif %}
 
 {% capture hero_images %}
-	{% for item in pages.hero_image %}
+	{% for item in page.hero_image %}
     - {{ item | relative_url }}
   {% endfor %}
 {% endcapture%}
