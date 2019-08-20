@@ -129,4 +129,5 @@ fields:
       format: markdown
   label: O nás (description)
 pages:
+- _pages/index.en.md
 - _pages/index.cs.md
