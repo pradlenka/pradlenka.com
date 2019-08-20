@@ -35,5 +35,3 @@ fields:
     schema:
       format: markdown
   label: Denní nabídka
-pages:
-- _daily_menu/2019-08-20.yml
