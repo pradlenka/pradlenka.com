@@ -4,7 +4,7 @@ permalink: "/"
 layout: home
 publish_date: 2019-08-20 16:08:80 +/-TTTT
 lang: cs
-logotype: "/uploads/2019/08/19/Pradlenka-logo.png"
+logotype: "/uploads/2019/08/20/Pradlenka-logo.png"
 daily_menu_select: []
 laundry_toggle: true
 heading: Veřejná prádelna
@@ -22,7 +22,15 @@ laundry_pricelist:
 - item: Sušení
   description: 12 minut
   price: 30
-hero_image: []
+hero_image:
+- "/uploads/2019/08/20/pradlenka-tap.jpg"
+- "/uploads/2019/08/20/pradlenka-lokal.jpg"
+- "/uploads/2019/08/20/pradlenka-garden-closeup.jpg"
+- "/uploads/2019/08/20/pradlenka-restaurant-2.jpg"
+- "/uploads/2019/08/20/pradlenka-armchairs.jpg"
+- "/uploads/2019/08/20/pradlenka-bar.jpg"
+- "/uploads/2019/08/20/pradlenka-garden.jpg"
+- "/uploads/2019/08/20/pradlenka-restaurant.jpg"
 daily_menu_toggle: false
 
 ---
