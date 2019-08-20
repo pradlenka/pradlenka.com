@@ -9,21 +9,19 @@
 <head>
 {% include head.html %}
 <script>
-function ready(fn) {
-  (document.readyState != 'loading') ? fn() : document.addEventListener('DOMContentLoaded', fn);
-}
 function onReady() {
 	const hero_images = {{ hero_images }};
 	const hero_length = hero_images.length
 	let current_image = 0;
-  const hero = document.querySelector(".hero");
-  setTimeout(next, 10000);
+	const hero = document.querySelector(".hero");
+	setTimeout(next, 10000);
 	function next() {
-	  current_image = (current_image + 1) % hero_length;
-	  hero.style.backgroundImage = `url(${hero_images[current_image]})`;
-	  setTimeout(next, 10000);
+		current_image = (current_image + 1) % hero_length;
+		hero.style.backgroundImage = `url(${hero_images[current_image]})`;
+		setTimeout(next, 10000);
 	}
 }
+function ready(fn) { (document.readyState != 'loading') ? fn() : document.addEventListener('DOMContentLoaded', fn); }(onReady);
 </script>
 <style>
 :root {
