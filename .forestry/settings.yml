@@ -9,7 +9,7 @@ sections:
   label: Denní nabidky
   create: documents
   match: "**/*.yml"
-  new_doc_ext: ".yml"
+  new_doc_ext: yml
   templates:
   - daily-menu
 - type: directory
