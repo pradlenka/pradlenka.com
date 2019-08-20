@@ -26,11 +26,14 @@ fields:
   type: text
   config:
     required: false
+  label: Odkaz (permalink)
+  default: ''
+  hidden: true
 - name: redirect_from
   type: text
   config:
     required: false
-  label: Odkaz (permalink)
+  label: Přesměrováno z (redirect_from)
   default: ''
   hidden: true
 - name: logotype
