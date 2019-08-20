@@ -1,13 +1,10 @@
----
-name: default
----
 {% if page.lang %}{% capture lang %}lang="{{ page.lang }}"{% endcapture %}{% else %}{% assign lang = "" %}{% endif %}
 <!doctype html>
 <html {{ lang }}>
 <head>
 {% include head.html %}
 </head>
-<body data-layout="{{ layout.name }}">
+<body data-layout="{{ page.layout }}">
   <nav>
     <a href="{{ site.baseurl }}">{{ site.title }}</a>
   </nav>

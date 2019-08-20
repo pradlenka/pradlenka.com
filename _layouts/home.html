@@ -1,13 +1,20 @@
----
-name: home
----
 {% if page.lang %}{% capture lang %}lang="{{ page.lang }}"{% endcapture %}{% else %}{% assign lang = "" %}{% endif %}
 <!doctype html>
-<html>
+<html {{ lang }}>
 <head>
 {% include head.html %}
+<style>
+:root {
+	--hero-image: url({{ page.hero_image | sample | relative_url }});
+}
+</style>
 </head>
-<body data-layout="{{ layout.name }}">
-<!-- {{ page | jsonify }} -->
+<body data-layout="{{ page.layout }}">
+	<header>
+		<a href="{{ site.baseurl | relative_url }}"><img src="{{ page.logotype | relative_url }}" alt="logo"></a>
+	</header>
+	<section>
+	</section>
+	<footer></footer>
 </body>
 </html>

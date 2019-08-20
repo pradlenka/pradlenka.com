@@ -1,5 +1,4 @@
-.logo {
-	display: block;
-	width: ;
-	content: attr(data-image);
+section {
+	height: 200px;
+	background: var(--hero-image);
 }
