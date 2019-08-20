@@ -36,7 +36,14 @@ jekyll-archives:
 css_version: knceasdft
 js_version: knceasdft
 meta_version: knceasdft
-
+languages:
+  - label: Česky
+    iso: cs
+    link: /cs/
+    default: true
+  - label: English
+    iso: en
+    link: /en/
 exclude:
   - .*/
   - _*/
