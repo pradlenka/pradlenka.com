@@ -128,3 +128,5 @@ fields:
     schema:
       format: markdown
   label: O nás (description)
+pages:
+- _pages/index.cs.md
