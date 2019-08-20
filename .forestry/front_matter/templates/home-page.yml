@@ -1,0 +1,122 @@
+---
+label: Home Page
+hide_body: true
+fields:
+- name: layout
+  label: Vzhled
+  type: text
+  hidden: true
+  default: home
+- name: lang
+  type: select
+  default: cs
+  config:
+    required: false
+    options:
+    - cs
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Jazyk
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Odkaz
+  default: ''
+- name: logotype
+  type: file
+  config:
+    maxSize: 250
+  label: Logo
+  default: "/uploads/2019/08/19/Pradlenka-logo.png"
+- name: title
+  type: text
+  config:
+    required: false
+  label: Název
+  default: Pradlenka – restaurant & bar
+- name: hero_image
+  type: image_gallery
+  config: {}
+  label: Úvodní obrázek
+- name: daily_menu_toggle
+  type: boolean
+  label: Máme denní nabídku?
+- name: daily_menu_select
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: pages
+      section: denni-menu-cesky
+      file: 
+      path: 
+  label: Denní nabídka
+  showOnly:
+    field: daily_menu_toggle
+    value: true
+- name: laundry_toggle
+  type: boolean
+  label: Funguje prádelna
+  default: true
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Nadpis
+  default: Veřejná prádelna
+  showOnly:
+    field: laundry_toggle
+    value: true
+- name: laundry_pricelist
+  type: field_group_list
+  fields:
+  - name: item
+    type: text
+    config:
+      required: false
+    label: Položka
+  - name: description
+    type: text
+    config:
+      required: false
+    label: Popis
+  - name: price
+    type: number
+    label: Cena
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 
+      max: 
+      step: 
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Ceník praní
+  showOnly:
+    field: laundry_toggle
+    value: true
+- name: description
+  type: textarea
+  default: Restauraci Pradlenka můžete znát pod dřívějším názvem Wash Café. Když se
+    vrátíme k historii prostor, ve kterých se Pradlenka nachází,  skutečně zde dříve
+    prádelna byla. I dnes tu vedle baru a restaurace  se skvělým jídlem a pitím najdete
+    veřejnou prádelnu.
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: O nás
+pages:
+- _pages/en/index.md
+- _pages/cs/index.md
