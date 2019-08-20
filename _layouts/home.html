@@ -10,10 +10,10 @@
 {% include head.html %}
 <script>
 function onReady() {
-	const hero_images = {{ hero_images }};
-	const hero_length = hero_images.length
-	let current_image = 0;
-	const hero = document.querySelector(".hero");
+	var hero_images = {{ hero_images }};
+	var hero_length = hero_images.length
+	var current_image = 0;
+	var hero = document.querySelector(".hero");
 	setTimeout(next, 10000);
 	function next() {
 		current_image = (current_image + 1) % hero_length;
