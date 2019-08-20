@@ -1,6 +1,13 @@
 ---
 name: home
-layout: default
 ---
-<!-- {{ page.title }} -->
-{{ content }}
+{% if page.lang %}{% capture lang %}lang="{{ page.lang }}"{% endcapture %}{% else %}{% assign lang = "" %}{% endif %}
+<!doctype html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body data-layout="{{ layout.name }}">
+<!-- {{ page }} -->
+</body>
+</html>
