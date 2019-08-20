@@ -42,9 +42,8 @@ exclude:
   - _*/
   - CNAME
   - Gemfile*
-plugins:
-  - jekyll-redirect-from
 gems:
   - jekyll-menus
   - jekyll-feed
   - jekyll-archives
+  - jekyll-redirect-from
