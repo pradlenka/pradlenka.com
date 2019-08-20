@@ -65,7 +65,7 @@ fields:
     options: []
     source:
       type: pages
-      section: denni-menu-cesky
+      section: denni-nabidky
       file: 
       path: 
   label: Denní nabídka
