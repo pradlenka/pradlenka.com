@@ -20,6 +20,7 @@ defaults:
       path: ""
     values:
       layout: default
+      image: "/assets/meta/apple-touch-icon.png"
   - scope:
       path: "_pages"
       type: pages
@@ -44,6 +45,10 @@ languages:
   - label: English
     iso: en
     link: /en/
+social:
+  links: 
+    - https://www.facebook.com/pradlenka.bar
+logo: "/assets/meta/apple-touch-icon.png"
 exclude:
   - .*/
   - _*/
@@ -54,3 +59,4 @@ gems:
   - jekyll-feed
   - jekyll-archives
   - jekyll-redirect-from
+  - jekyll-seo-tag
