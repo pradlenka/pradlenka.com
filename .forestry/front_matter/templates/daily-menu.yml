@@ -12,21 +12,7 @@ fields:
     time_format: 
     display_utc: false
     export_format: YYYY-MM-DD
-- name: language
-  type: select
-  default: Česky
-  config:
-    required: false
-    options:
-    - Česky
-    - English
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Jazyk
-- name: daily_menu
+- name: daily_menu_cs
   type: textarea
   default: ''
   config:
@@ -34,4 +20,13 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Denní nabídka
+  label: Denní nabídka (česky)
+- name: daily_menu_en
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Daily menu (English)
