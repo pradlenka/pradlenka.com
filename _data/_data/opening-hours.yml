@@ -1,0 +1,18 @@
+---
+opening_hours:
+- weekday_cs: Po—Čt
+  weekday_en: Mon—Thu
+  from: '10.30'
+  to: '01.00'
+- weekday_cs: Pá
+  from: '10.30'
+  to: "??.??"
+  weekday_en: Fri
+- weekday_cs: So
+  weekday_en: Sat
+  from: '11.30'
+  to: "??.??"
+- weekday_cs: Ne
+  weekday_en: Sun
+  from: '11.30'
+  to: '00.00'
