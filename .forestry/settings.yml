@@ -4,6 +4,16 @@ auto_deploy: false
 admin_path: admin
 webhook_url: 
 sections:
+- type: heading
+  label: Stránky
+- type: document
+  path: _pages/index.cs.md
+  label: Česky
+- type: document
+  path: _pages/index.en.md
+  label: English
+- type: heading
+  label: Denní nabídky
 - type: directory
   path: _daily_menu
   label: Denní nabidky
@@ -12,24 +22,14 @@ sections:
   new_doc_ext: yml
   templates:
   - daily-menu
+- type: heading
+  label: Nastavení
 - type: document
   path: _data/opening-hours.yml
   label: Otvírací doba
 - type: document
   path: _data/contacts.yml
   label: Kontakty
-- type: directory
-  path: ''
-  label: Všechno
-  create: all
-  match: "**/*"
-  new_doc_ext: yml
-  templates:
-  - default
-  - daily-menu
-  - home-page
-  - contacts
-  - opening-hours
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''

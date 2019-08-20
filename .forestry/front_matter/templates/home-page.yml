@@ -7,17 +7,6 @@ fields:
   type: text
   hidden: true
   default: home
-- name: publish_date
-  type: datetime
-  label: Datum zveřejnění (publish_date)
-  description: ''
-  config:
-    required: true
-    date_format: dddd D. M. YYYY
-    time_format: h:mm A ZZ
-    display_utc: false
-    export_format: YYYY-MM-DD HH:MM:SS +/-TTTT
-  default: now
 - name: lang
   type: select
   default: cs
@@ -32,12 +21,14 @@ fields:
       file: 
       path: 
   label: Jazyk (lang)
+  hidden: true
 - name: permalink
   type: text
   config:
     required: false
   label: Odkaz (permalink)
   default: ''
+  hidden: true
 - name: logotype
   type: file
   config:
@@ -130,3 +121,4 @@ fields:
   label: O nás (description)
 pages:
 - _pages/index.cs.md
+- _pages/index.en.md
