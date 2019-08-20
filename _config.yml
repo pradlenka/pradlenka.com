@@ -21,6 +21,9 @@ defaults:
     values:
       layout: default
       image: "/assets/meta/apple-touch-icon.png"
+      seo:
+        name: Pradlenka – restaurant & bar
+        type: Restaurant
   - scope:
       path: "_pages"
       type: pages
