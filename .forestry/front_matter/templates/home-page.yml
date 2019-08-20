@@ -7,6 +7,16 @@ fields:
   type: text
   hidden: true
   default: home
+- name: publish_date
+  type: datetime
+  label: Datum zveřejnění (publish_date)
+  description: ''
+  config:
+    required: true
+    date_format: dddd D. M. YYYY
+    time_format: h:mm A ZZ
+    display_utc: false
+  default: now
 - name: lang
   type: select
   default: cs
