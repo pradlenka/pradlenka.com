@@ -1,0 +1,72 @@
+---
+label: Contact Information
+hide_body: true
+fields:
+- name: organization
+  type: text
+  config:
+    required: false
+  label: Firma
+  default: Pradlenka – restaurant & bar
+- name: address
+  label: Ulice a č. p./č. o.
+  type: text
+  hidden: false
+  default: Nádražní 308/66
+- name: city
+  label: Obec
+  type: text
+  hidden: false
+  default: Praha 5-Smíchov
+- name: postal_code
+  label: PSČ
+  type: text
+  hidden: false
+  default: 150 00
+- name: phone
+  label: Telefon
+  type: text
+  hidden: false
+  default: "+420 257 327 699"
+- name: facebook
+  type: text
+  config:
+    required: false
+  label: Facebook
+  default: https://www.facebook.com/pradlenka.bar
+  hidden: false
+- name: email
+  label: E-mail
+  type: text
+  hidden: false
+  default: restaurace.bar@gmail.com
+- name: ic
+  type: number
+  description: ''
+  default: '04095481'
+  config:
+    required: false
+    min: 
+    max: 
+    step: 
+  label: IČ
+- name: dic
+  type: text
+  config:
+    required: false
+  label: DIČ
+  default: CZ04095481
+- name: mapy_cz
+  type: text
+  config:
+    required: false
+  label: Mapy.cz
+  default: https://api.mapy.cz/frame?params=%7B%22x%22%3A14.408381462097168%2C%22y%22%3A50.064979553222656%2C%22base%22%3A%221%22%2C%22layers%22%3A%5B%5D%2C%22zoom%22%3A17%2C%22url%22%3A%22https%3A%2F%2Fmapy.cz%2Fs%2F3y9bE%22%2C%22mark%22%3A%7B%22x%22%3A%2214.408381462097168%22%2C%22y%22%3A%2250.064979553222656%22%2C%22title%22%3A%22Pradlenka%20restaurant%20bar%22%7D%2C%22overview%22%3Afalse%7D
+- name: maps_google
+  type: text
+  config:
+    required: false
+  label: Maps Google
+  default: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.137291961543!2d14.406282315608783!3d50.06499042294495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b945bb07cc58b%3A0xa927ee390245e772!2sRestaurant+%26+Landromat!5e0!3m2!1sen!2scz!4v1566215127103!5m2!1sen!2scz
+pages:
+- _data/contacts.yml
