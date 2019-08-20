@@ -3,13 +3,7 @@
 {% else %}
   {% assign lang = "" %}
 {% endif %}
-
-{% capture hero_images %}
-	{% for item in page.hero_image %}
-    - {{ item | relative_url }}
-  {% endfor %}
-{% endcapture%}
-
+{% capture hero_images %}[{% for url in page.hero_image %}"{{ url | relative_url }}"{% endfor %}]{% endcapture%}
 <!doctype html>
 <html {{ lang }}>
 <head>
