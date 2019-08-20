@@ -1,6 +1,7 @@
 ---
 title: Pradlenka – restaurant & bar
 permalink: "/"
+redirect_from: "/cs/"
 layout: home
 lang: cs
 logotype: "/uploads/2019/08/20/Pradlenka-logo.png"

@@ -1,3 +1,4 @@
+# metadata
 title: Pradlenka – restaurant & bar
 short_title: Pradlenka
 description: >
@@ -10,6 +11,8 @@ description-cs: >
   Když se vrátíme k historii prostor, ve kterých se Pradlenka nachází, 
   skutečně zde dříve prádelna byla. I dnes tu vedle baru a restaurace 
   se skvělým jídlem a pitím najdete veřejnou prádelnu.
+
+# settings
 baseurl:
 permalink: "/:path/"
 defaults:
@@ -33,11 +36,14 @@ jekyll-archives:
 css_version: knceasdft
 js_version: knceasdft
 meta_version: knceasdft
+
 exclude:
   - .*/
   - _*/
   - CNAME
   - Gemfile*
+plugins:
+  - jekyll-redirect-from
 gems:
   - jekyll-menus
   - jekyll-feed
