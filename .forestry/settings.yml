@@ -8,7 +8,7 @@ sections:
   path: _daily_menu
   label: Denní nabidky
   create: documents
-  match: "**/*.yml"
+  match: "*.yml"
   new_doc_ext: yml
   templates:
   - daily-menu
@@ -17,6 +17,12 @@ sections:
   label: Všechno
   create: all
   match: "**/*"
+  templates:
+  - default
+  - daily-menu
+  - home-page
+  - contacts
+  - opening-hours
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
