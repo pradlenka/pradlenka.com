@@ -1,10 +1,21 @@
-{% if page.lang %}{% capture lang %}lang="{{ page.lang }}"{% endcapture %}{% else %}{% assign lang = "" %}{% endif %}
+{% if page.lang %}
+	{% capture lang %}lang="{{ page.lang }}"{% endcapture %}
+{% else %}
+  {% assign lang = "" %}
+{% endif %}
+
+{% capture hero_images %}
+	{% for url in pages.hero_image %}
+    - {{ url | relative_url }}
+  {% endfor %}
+{% endcapture%}
+
 <!doctype html>
 <html {{ lang }}>
 <head>
 {% include head.html %}
 <script>
-hero_image = {{ page.hero_image | jsonify }};
+hero_image = {{ hero_images | jsonify }};
 </script>
 <style>
 :root {
