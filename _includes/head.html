@@ -2,11 +2,11 @@
 <title>{{ page.title | markdownify }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% if page.description %}
-<meta name="description" content="{{ {{ {{ page.description | markdownify }} | strip_html }} | strip_newlines }}">
+<meta name="description" content="{{ page.description | markdownify | strip_html | strip_newlines }}">
 {% elsif page.lang == 'cs' and site.description-cs %}
-<meta name="description" content="{{ {{ {{ site.description-cs | markdownify }} | strip_html }} | strip_newlines }}">
+<meta name="description" content="{{ site.description-cs | markdownify | strip_html | strip_newlines }}">
 {% elsif site.description %}
-<meta name="description" content="{{ {{ {{ site.description | markdownify }} | strip_html }} | strip_newlines }}">
+<meta name="description" content="{{ site.description | markdownify | strip_html | strip_newlines }}">
 {% endif %}
 <link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/meta/apple-touch-icon.png' | relative_url }}?v={{{{ site.meta_version }}}}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/meta/favicon-32x32.png' | relative_url }}?v={{ site.meta_version }}">
