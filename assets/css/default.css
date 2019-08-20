@@ -1,0 +1,5 @@
+.logo {
+	display: block;
+	width: ;
+	content: attr(data-image);
+}

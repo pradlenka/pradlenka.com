@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<title>{{ page.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% elsif page.lang == 'cs' and site.description-cs %}
+<meta name="description" content="{{ site.description-cs }}">
+{% elsif site.description %}
+<meta name="description" content="{{ site.description }}">
+{% endif %}
+<link rel="apple-touch-icon" sizes="152x152" href="{{ '/assets/meta/apple-touch-icon.png' | relative_url }}?v={{{{ site.meta_version }}}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/meta/favicon-32x32.png' | relative_url }}?v={{ site.meta_version }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/meta/favicon-16x16.png' | relative_url }}?v={{ site.meta_version }}">
+<link rel="manifest" href="{{ '/assets/meta/site.webmanifest' | relative_url }}?v={{ site.meta_version }}">
+<link rel="mask-icon" href="{{ '/assets/meta/safari-pinned-tab.svg' | relative_url }}?v={{ site.meta_version }}" color="#5bbad5">
+<link rel="shortcut icon" href="{{ '/assets/meta/favicon.ico' | relative_url }}?v={{ site.meta_version }}">
+<meta name="apple-mobile-web-app-title" content="{{ site.short_title}}">
+<meta name="application-name" content="{{ site.short_title}}">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="msapplication-config" content="{{ '/assets/meta/browserconfig.xml' | relative_url }}?v={{ site.meta_version }}">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="{{ '/assets/css/default.css' | relative_url }}?v={{ site.css_version }}">
+<script src="{{ '/assets/js/default.js' | relative_url }}?v={{ site.js_version }}"></script>

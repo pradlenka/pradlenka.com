@@ -1,6 +1,11 @@
 title: Pradlenka – restaurant & bar
 short_title: Pradlenka
 description: >
+  The Pradlenka restaurant is also known under its former name Wash Café.
+  Looking back into history, in the place where Pradlenka is located, 
+  you will find a real laundry. Even today, next to the bar and 
+  restaurant with great food and drinks, we run a public laundry here.
+description-cs: >
   Restauraci Pradlenka můžete znát pod dřívějším názvem Wash Café. 
   Když se vrátíme k historii prostor, ve kterých se Pradlenka nachází, 
   skutečně zde dříve prádelna byla. I dnes tu vedle baru a restaurace 
@@ -25,6 +30,14 @@ collections:
 jekyll-archives:
   enabled: all
   layout: "archive"
+css_version: knceasdft
+js_version: knceasdft
+meta_version: knceasdft
+exclude:
+  - .*/
+  - _*/
+  - CNAME
+  - Gemfile*
 gems:
   - jekyll-menus
   - jekyll-feed
