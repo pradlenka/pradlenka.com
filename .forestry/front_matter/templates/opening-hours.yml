@@ -1,0 +1,36 @@
+---
+label: Opening Hours
+hide_body: true
+fields:
+- name: opening_hours
+  type: field_group_list
+  fields:
+  - name: weekday_cs
+    type: text
+    config:
+      required: false
+    label: Den v týdnu (česky)
+  - name: weekday_en
+    type: text
+    config:
+      required: false
+    label: Den v týdnu (anglicky)
+  - name: from
+    type: text
+    config:
+      required: false
+    label: Od
+    default: '10.30'
+  - name: to
+    type: text
+    config:
+      required: false
+    label: Do
+    default: '01.00'
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Otevírací doba
+pages:
+- _data/opening-hours.yml
