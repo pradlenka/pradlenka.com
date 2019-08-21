@@ -4,5 +4,5 @@
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-	transition: background-image 2s 1s ease-in-out;
+	transition: background-image .5s 1s ease-in-out;
 }
