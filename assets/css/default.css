@@ -1,4 +1,8 @@
-section {
-	height: 200px;
-	background: var(--hero-image);
+.hero {
+	height: 400px;
+	background-image: var(--hero-image);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	transition: background-image 2s 1s ease-in-out;
 }
