@@ -1,9 +1,4 @@
-{% if page.lang %}
-	{% capture lang %}lang="{{ page.lang }}"{% endcapture %}
-{% else %}
-  {% assign lang = "" %}
-{% endif %}
-<!doctype html>
+<!doctype html>{% if page.lang %}{% capture lang %}lang="{{ page.lang }}"{% endcapture %}{% else %}{% assign lang = "" %}{% endif %}
 <html {{ lang }}>
 <head>
 {% include head.html %}
