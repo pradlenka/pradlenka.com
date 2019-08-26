@@ -2,7 +2,7 @@
 label: Contact Information
 hide_body: true
 fields:
-- name: name
+- name: organization
   type: text
   config:
     required: false
