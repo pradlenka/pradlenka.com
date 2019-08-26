@@ -32,4 +32,14 @@ hero_image:
 - "/uploads/2019/08/20/pradlenka-garden.jpg"
 - "/uploads/2019/08/20/pradlenka-restaurant.jpg"
 daily_menu_toggle: true
+features:
+- milou a přátelskou obsluhu
+- příjemnou atmosféru
+- výborné jídlo a pití
+- ideální místo pro rodinné oslavy, firemní večírky, oslavy narozenin či výročí, pro
+  posezení s přáteli nebo pro rande
+- přiměřené ceny
+- wifi připojení k internetu zdarma
+fesatureset: Co u nás najdete?
+
 ---
