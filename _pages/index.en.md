@@ -31,5 +31,14 @@ hero_image:
 - "/uploads/2019/08/20/pradlenka-garden.jpg"
 - "/uploads/2019/08/20/pradlenka-restaurant.jpg"
 daily_menu_toggle: true
+redirect_from: ''
+fesatureset: What can you find here?
+features:
+- Nice atmosphere
+- Delicious food and drink
+- Ideal place for family celebrations, company parties, birthdays or anniversaries,
+  for meetings with friends or for a date
+- Reasonable prices
+- Free wifi
 
 ---
