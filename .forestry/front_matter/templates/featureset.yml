@@ -1,4 +1,19 @@
 ---
 label: Featureset
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Nadpis
+  default: Co u nás najdete
+- name: features
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+    source:
+      type: simple
+  label: Nabídka
