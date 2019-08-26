@@ -4,6 +4,14 @@ auto_deploy: true
 admin_path: admin
 webhook_url: 
 sections:
+- type: directory
+  path: ''
+  label: Featureset
+  create: all
+  match: "**/*"
+  new_doc_ext: ".yml"
+  templates:
+  - featureset
 - type: heading
   label: Stránky
 - type: document
