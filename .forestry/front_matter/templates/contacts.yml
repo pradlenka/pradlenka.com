@@ -2,7 +2,7 @@
 label: Contact Information
 hide_body: true
 fields:
-- name: organization
+- name: name
   type: text
   config:
     required: false
@@ -40,6 +40,12 @@ fields:
   type: text
   hidden: false
   default: restaurace.bar@gmail.com
+- name: company
+  type: text
+  config:
+    required: false
+  label: Název firmy
+  default: Pradlenka Restaurant Bar s.r.o.
 - name: ic
   type: number
   description: ''
