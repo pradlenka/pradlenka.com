@@ -9,7 +9,7 @@ sections:
   label: Featureset
   create: all
   match: "**/*"
-  new_doc_ext: ".yml"
+  new_doc_ext: yml
   templates:
   - featureset
 - type: heading
