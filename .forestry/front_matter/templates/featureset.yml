@@ -2,7 +2,7 @@
 label: Featureset
 hide_body: true
 fields:
-- name: heading
+- name: fesatureset
   type: text
   config:
     required: false
