@@ -5,13 +5,13 @@ fields:
 - name: organization_cs
   type: text
   config:
-    required: false
+    required: true
   label: Název (česky)
   default: Pradlenka – restaurace & bar
 - name: organization_en
   type: text
   config:
-    required: false
+    required: true
   label: Název (English)
   default: Pradlenka—Restaurant & Bar
 - name: shortname_cs
@@ -23,7 +23,7 @@ fields:
 - name: shortname_en
   type: text
   config:
-    required: false
+    required: true
   label: Krátký název (English)
   default: Pradlenka
 - name: company
