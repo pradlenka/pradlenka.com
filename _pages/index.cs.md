@@ -4,7 +4,7 @@ permalink: "/"
 redirect_from: "/cs/"
 layout: home
 lang: cs
-logotype: "/uploads/2019/08/20/Pradlenka-logo.png"
+logotype: ''
 daily_menu_select: _daily_menu/2019-08-20.yml
 laundry_toggle: true
 heading: Veřejná prádelna
