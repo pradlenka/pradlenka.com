@@ -36,12 +36,6 @@ fields:
   label: Přesměrováno z (redirect_from)
   default: ''
   hidden: true
-- name: logotype
-  type: file
-  config:
-    maxSize: 250
-  label: Logo
-  default: "/uploads/2019/08/19/Pradlenka-logo.png"
 - name: title
   type: text
   config:
