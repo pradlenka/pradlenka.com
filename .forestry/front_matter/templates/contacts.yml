@@ -2,12 +2,52 @@
 label: Contact Information
 hide_body: true
 fields:
-- name: organization
+- name: organization_cs
   type: text
   config:
     required: false
-  label: Název
-  default: Pradlenka – restaurant & bar
+  label: Název (česky)
+  default: Pradlenka – restaurace & bar
+- name: organization_en
+  type: text
+  config:
+    required: false
+  label: Název (English)
+  default: Pradlenka—Restaurant & Bar
+- name: shortname_cs
+  type: text
+  config:
+    required: true
+  label: Krátký název (česky)
+  default: Pradlenka
+- name: shortname_en
+  type: text
+  config:
+    required: false
+  label: Krátký název (English)
+  default: Pradlenka
+- name: company
+  type: text
+  config:
+    required: false
+  label: Název firmy
+  default: Pradlenka Restaurant Bar s.r.o.
+- name: ic
+  type: number
+  description: ''
+  default: '04095481'
+  config:
+    required: false
+    min: 
+    max: 
+    step: 
+  label: IČ
+- name: dic
+  type: text
+  config:
+    required: false
+  label: DIČ
+  default: CZ04095481
 - name: address
   label: Ulice a č. p./č. o.
   type: text
@@ -40,28 +80,6 @@ fields:
   type: text
   hidden: false
   default: restaurace.bar@gmail.com
-- name: company
-  type: text
-  config:
-    required: false
-  label: Název firmy
-  default: Pradlenka Restaurant Bar s.r.o.
-- name: ic
-  type: number
-  description: ''
-  default: '04095481'
-  config:
-    required: false
-    min: 
-    max: 
-    step: 
-  label: IČ
-- name: dic
-  type: text
-  config:
-    required: false
-  label: DIČ
-  default: CZ04095481
 - name: mapy_cz
   type: text
   config:
